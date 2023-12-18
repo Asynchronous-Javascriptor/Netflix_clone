@@ -1,0 +1,400 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial;
+    }
+
+    body,html {
+        background-attachment: scroll;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./netflixbg.jpg);
+    }
+
+
+    .logo {
+        width: 20vw;
+        padding: 1vw 4vw;
+        cursor: pointer;
+    }
+
+
+    .container {
+        position: absolute;
+        min-width:33%;
+        height: 580px;
+        margin: 1% 36%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    }
+
+    .container h1{
+        color: white;
+        padding: 3vw 5vw;
+        font-family: arial;
+    }
+
+    .inputs{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .inputs input{
+        padding: 1vw 0vw;
+        background-color: #333333;
+        border-radius: 3px;
+        border: none;
+        font-size: 20px;
+    }
+
+    .inputs input::placeholder{
+        font-size: 17px;
+        padding: 20px;
+        color: #8EB3B3;
+    }
+    #submit{
+        background: #E50914;
+        border: none;
+        margin-top: 2vw;
+        font-size: 18px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .check{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .check span{
+        color:#8EB3B3;
+        font-size: 1.2vw;
+        padding: 0.5vw;
+    }
+
+    .check a{
+        color: #8EB3B3;
+        font-size: 1vw;
+        text-decoration: none;
+    }
+
+    .loginfooter{
+        position: relative;
+        margin: 5vw 5vw;
+    }
+    
+    .loginfooter p{
+        color: #8EB3B3;
+        font-size: 1.2vw;
+        font-weight:400;
+    }
+    .loginfooter p a{
+        color:#fff;
+        font-size:16px;
+        padding: 0 1vw;
+        text-decoration: none;
+    }
+    
+    .loginfooter h2{
+        font-size: 12px;
+        font-weight: 100;
+        color: #8EB3B3;
+        padding: 1vw 0;
+    }
+    
+    .loginfooter h2 a{
+        color: #0071C7;
+        font-size: 14px;
+    }
+
+    .last-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+    }
+    .last{
+        width: 100%;
+        margin-top:50%;
+        padding: 2vw;
+        position: absolute;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    }
+    
+    .last-links {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 10px;
+    }
+    
+    .last-links li {
+        flex-basis: calc(33.33% - 20px);
+    }
+    
+    .last-links a {
+        text-decoration: none;
+        color: #757575;
+        transition: color 0.3s ease;
+    }
+    
+    .last-links a:hover {
+        color: white;
+    }
+    
+    .last p{
+        margin-left: 4vw;
+        padding: 1vw 5vw;
+        color: white;
+    }
+    
+    .last select{
+        margin-left: 8vw;
+        padding: 0.7vw 2.4vw;
+        margin-top: 2%;
+        color: white;
+        background-color: transparent;
+    }
+    .last select option{
+        background-color: black;
+    }
+
+   
+
+    
+
+
+    @media (max-width:992px) {
+        .container{
+            min-width: 40%;
+        }
+    }
+
+    @media (max-width:768px) {
+        .container{
+            min-width: 45%;
+        }
+        .last{
+            margin-top: 100%;
+        }
+    }
+
+    @media (max-width:696px) {
+        .logo {
+            width: 25vw;
+            padding: 3vw 3vw;
+        }
+
+        body,html {
+            width: 100%;
+            background-image: none;
+            background-color: black;
+        }
+
+        .container {
+            width:100%;
+            height: 480px;
+            margin:1% 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 10));
+            border-bottom: 1px solid white;
+        }
+
+        .container h1{
+            color: white;
+            padding: 0 0 5vw 8vw;
+            font-family: arial;
+        }
+    
+        .inputs{
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .inputs input{
+            padding: 2vw 0vw;
+            background-color: #333333;
+            border-radius: 3px;
+            border: none;
+            font-size: 20px;
+        }
+    
+        .inputs input::placeholder{
+            font-size: 17px;
+            padding: 20px;
+            color: #8EB3B3;
+        }
+        #submit{
+            background: #E50914;
+            border: none;
+            margin-top: 2vw;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+    
+        .check{
+            display: none;
+        }
+
+    
+        .loginfooter{
+            position: relative;
+            margin: 12vw 8vw;
+        }
+        
+        .loginfooter p{
+            color: #888888;
+            font-size: 3vw;
+            font-weight:100;
+            letter-spacing: 0.2vw;
+        }
+        .loginfooter p a{
+            color:#fff;
+            font-size:20px;
+            padding: 0 1vw;
+            text-decoration: none;
+        }
+        
+        .loginfooter h2{
+            font-size: 18px;
+           
+        }
+        
+        .loginfooter h2 a{
+            color: #0071C7;
+            font-size: 18px;
+        }
+
+
+        .last-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .last{
+            width: 100%;
+            margin-top:100%;
+            padding: 2vw;
+            position: absolute;
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+        }
+
+        .last p{
+            margin-left: 1vw;
+            padding: 1vw 0vw;
+            color: white;
+        }
+        
+        
+    }
+
+
+
+    @media (max-width:600px) {
+
+        .logo {
+            width: 25vw;
+            padding: 3vw 3vw;
+        }
+
+        body,html {
+            width: 100%;
+            background-image: none;
+            background-color: black;
+        }
+
+        .container {
+            width:100%;
+            height: 480px;
+            margin:1% 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 10));
+            border-bottom: 1px solid white;
+        }
+
+        .container h1{
+            color: white;
+            padding: 0 0 5vw 8vw;
+            font-family: arial;
+        }
+    
+        .inputs{
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .inputs input{
+            padding: 2vw 0vw;
+            background-color: #333333;
+            border-radius: 3px;
+            border: none;
+            font-size: 20px;
+        }
+    
+        .inputs input::placeholder{
+            font-size: 17px;
+            padding: 20px;
+            color: #8EB3B3;
+        }
+        #submit{
+            background: #E50914;
+            border: none;
+            margin-top: 2vw;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+        }
+    
+        .check{
+            display: none;
+        }
+
+    
+        .loginfooter{
+            position: relative;
+            margin: 12vw 8vw;
+        }
+        
+        .loginfooter p{
+            color: #888888;
+            font-size: 3vw;
+            font-weight:100;
+            letter-spacing: 0.2vw;
+        }
+        .loginfooter p a{
+            color:#fff;
+            font-size:20px;
+            padding: 0 1vw;
+            text-decoration: none;
+        }
+        
+        .loginfooter h2{
+            font-size: 18px;
+           
+        }
+        
+        .loginfooter h2 a{
+            color: #0071C7;
+            font-size: 18px;
+        }
+
+        
+    }
+
+        
+    
